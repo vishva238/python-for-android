@@ -26,6 +26,7 @@
 
     <!-- Allow writing to external storage -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
     {% for perm in args.permissions %}
     {% if '.' in perm %}
     <uses-permission android:name="{{ perm }}" />
